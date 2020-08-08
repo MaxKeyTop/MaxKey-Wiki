@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en">
+{% include zh/head.html %}
+<body   id="body" >
+	<div id="preloader"></div>
+
+	{% include zh/header.html %} 
+  
+	<section id="intro" class="wow fadeIn">
+
+		<div class="intro-content">
+		  <h2>安全 <span>连接</span><br>每个应用!</h2> 
+		  <!--
+		  <div>
+			<a href="{{ "/tutorial.html" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}" class="btn-get-started scrollto">快速使用</a>
+			<a href="https://github.com/MaxKeyTop/MaxKey" class="btn-projects scrollto">开源项目</a>
+		  </div>
+		  !-->
+		</div>
+
+		<div id="intro-carousel" class="owl-carousel" >
+		  <div class="item" style="background-image: url('{{ "/static/images/home/intro-carousel/1.jpg" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}');"></div>
+		  <div class="item" style="background-image: url('{{ "/static/images/home/intro-carousel/2.jpg" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}');"></div>
+		  <div class="item" style="background-image: url('{{ "/static/images/home/intro-carousel/3.jpg" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}');"></div>
+		  <div class="item" style="background-image: url('{{ "/static/images/home/intro-carousel/4.jpg" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}');"></div>
+		  <div class="item" style="background-image: url('{{ "/static/images/home/intro-carousel/5.jpg" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}');"></div>
+		</div>
+	</section><!-- #intro -->
+  
+	<main id="main"  >
+		<section id="about" class="wow fadeInUp">
+		  <div class="container">
+			<div class="row">
+			  <div class="col-lg-6 about-img">
+				<img src="{{ "/static/images/home/about-img.png" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}" alt="">
+			  </div>
+
+			  <div class="col-lg-6 content">
+				<h2>业界领先的身份管理和认证产品</h2>
+				<h3>MaxKey单点登录认证系统(Sigle Sign On System)，MaxKey中文谐音为马克思的钥匙，寓意是最大钥匙。</h3>
+
+				<ul>
+				  <li><i class="fa fa-check-circle-o"></i> 统一认证和单点登录，简化账号登录过程，保护账号和密码安全，对账号进行统一管理。</li>
+				  <li><i class="fa fa-check-circle-o"></i> 提供简单、标准、安全和开放的用户身份管理(IDM)、身份认证(AM)、单点登录(SSO)、资源管理和权限管理等.</li>
+				  <li><i class="fa fa-check-circle-o"></i> 标准安全策略包括密码策略，访问策略；事后安全审计，对用户全生命周期审计、访问行为记录追溯审计、安全合规审计、安全风险预警。</li>
+				</ul>
+
+			  </div>
+			</div>
+
+		  </div>
+		</section><!-- #about -->
+		
+		<section id="services">
+		  <div class="container">
+			<div class="section-header">
+			  <h2>主要功能</h2>
+			  <p>MaxKey可以快速的进行企业的用户和机构统一管理和同步，实现用户生命周期的管理；通过标准的协议快捷完成应用认证的集成，支持PC、平板、手机多种设备的接入。</p>
+			</div>
+
+			<div class="row">
+			 <div class="col-lg-6">
+				<div class="box wow fadeInLeft">
+				  <div class="icon"><i class="fa fa-sitemap"></i></div>
+				  <h4 class="title"><a href="">构建企业目录服务</a></h4>
+				  <p class="description">
+				  统一企业机构和用户主数据，构建企业目录服务。
+				  </p>
+				</div>
+			  </div>
+
+			   
+			  <div class="col-lg-6">
+				<div class="box wow fadeInRight">
+				  <div class="icon"><i class="fa fa-key"></i></div>
+				  <h4 class="title"><a href="">单点登录</a></h4>
+				  <p class="description">
+				  一次登录，访问所有授权应用。
+				  </p>
+				</div>
+			  </div>
+
+			  <div class="col-lg-6">
+				<div class="box wow fadeInLeft">
+				  <div class="icon"><i class="fa fa-puzzle-piece"></i></div>
+				  <h4 class="title"><a href="">标准协议</a></h4>
+				  <p class="description">
+					OAuth 2.0/OpenID Connect、SAML 2.0、JWT、CAS、SCIM2.0标准协议。
+				  </p>
+				</div>
+			  </div>
+
+			<div class="col-lg-6">
+				<div class="box wow fadeInRight">
+				  <div class="icon"><i class="fa fa-wechat"></i></div>
+				  <h4 class="title"><a href="">社交账号集成</a></h4>
+				  <p class="description">
+					微信、QQ、钉钉、微博、微软、Google、Facebook等社交账号登陆信任。
+				  </p>
+				</div>
+			  </div>
+
+			  <div class="col-lg-6">
+				<div class="box wow fadeInLeft">
+				  <div class="icon"><i class="fa  fa-anchor"></i></div>
+				  <h4 class="title"><a href="">多因素认证</a></h4>
+				  <p class="description">
+					支持图片动态验证码、短信验证码、Google/Microsoft Authenticator/FreeOTP/支持TOTP或者HOTP。
+				  </p>
+				</div>
+			  </div>
+			  
+			  <div class="col-lg-6">
+				<div class="box wow fadeInRight" data-wow-delay="0.2s">
+				  <div class="icon"><i class="fa fa-balance-scale"></i></div>
+				  <h4 class="title"><a href="">用户生命周期管理</a></h4>
+				  <p class="description">提供标准REST和SCIM2.0接口轻松完成机构肯用户同步，基于Apache Kafka和连接器(Connector)的管理架构。</p>
+				</div>
+			  </div>
+
+			  <div class="col-lg-6">
+				<div class="box wow fadeInLeft" data-wow-delay="0.2s">
+				  <div class="icon"><i class="fa fa-random"></i></div>
+				  <h4 class="title"><a href="">开箱即用连接器</a></h4>
+				  <p class="description">
+					企业微信,钉钉,飞书,华为WeLink,SCIM 2,ActiveDirectory ,LDAP ,JDBC等开箱即用连接器。
+				  </p>
+				</div>
+			  </div>
+			  
+			  <div class="col-lg-6">
+				<div class="box wow fadeInRight" data-wow-delay="0.2s">
+				  <div class="icon"><i class="fa fa-legal"></i></div>
+				  <h4 class="title"><a href="">安全策略及审计</a></h4>
+				  <p class="description">配置化的密码策略，访问策略；强大安全审计，对用户全生命周期审计、访问行为记录追溯审计、安全合规审计、安全风险预警。</p>
+				</div>
+			  </div>
+			  
+			  <div class="col-lg-6">
+				<div class="box wow fadeInLeft">
+				  <div class="icon"><i class="fa fa-bank"></i></div>
+				  <h4 class="title"><a href="">完善的社区</a></h4>
+				  <p class="description">
+					完善的社区，为您提供全方位咨询和技术支持，同时提供企业版服务。
+				  </p>
+				</div>
+			  </div>
+			  
+			  <div class="col-lg-6">
+				<div class="box wow fadeInRight" data-wow-delay="0.2s">
+				  <div class="icon"><i class="fa fa-dollar"></i></div>
+				  <h4 class="title"><a href="">开源免费</a></h4>
+				  <p class="description">
+					基于Apache License, Version 2.0，开源免费，减少企业成本。
+				  </p>
+				</div>
+			  </div>
+			  
+			</div>
+
+		  </div>
+		</section><!-- #services -->
+	
+	</main>
+	 
+    {% include zh/footer.html %}
+</body>
+</html>
